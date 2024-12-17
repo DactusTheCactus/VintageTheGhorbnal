@@ -1,24 +1,6 @@
 <script setup>
 import VintageSlider from '../components/gallery/VintageSlider.vue';
 
-const galleryImages = [
-  {
-    url: '/images/gallery-1.jpg',
-    caption: 'Rare Collection of Victorian Era Artifacts'
-  },
-  {
-    url: '/images/gallery-2.jpg',
-    caption: 'Art Deco Masterpieces'
-  },
-  {
-    url: '/images/gallery-3.jpg',
-    caption: 'Industrial Revolution Innovations'
-  },
-  {
-    url: '/images/gallery-4.jpg',
-    caption: 'Early Photography Equipment'
-  }
-];
 </script>
 
 <template>

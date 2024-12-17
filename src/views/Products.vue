@@ -2,24 +2,24 @@
 const products = [
   {
     id: 1,
-    name: 'Antique Typewriter',
-    description: 'A beautifully preserved 1920s Underwood typewriter',
-    price: '$450',
-    image: '/images/typewriter.jpg'
+    name: 'Macchina',
+    description: 'Batmobile Antica di Batman 1800',
+    price: '$2.567.000',
+    image: new URL( '../assets/Macchina.jpg', import.meta.url).href,
   },
   {
     id: 2,
-    name: 'Vintage Camera',
-    description: 'Classic Leica M3 from 1954',
-    price: '$1,200',
-    image: '/images/camera.jpg'
+    name: 'Aereo di Alfredo Villani',
+    description: 'Aereo di Alfredo Villani - WW1',
+    price: '$3.500.000',
+    image: new URL( '../assets/Aereo.jpg', import.meta.url).href,
   },
   {
     id: 3,
-    name: 'Gramophone',
-    description: 'Restored Victor Talking Machine from 1915',
-    price: '$850',
-    image: '/images/gramophone.jpg'
+    name: 'Telefono',
+    description: 'Telefono funzionante, 1857',
+    price: '$2.400',
+    image: new URL( '../assets/Telefono.jpg', import.meta.url).href,
   }
 ];
 </script>
@@ -30,7 +30,7 @@ const products = [
     <div class="products-grid">
       <div v-for="product in products" :key="product.id" class="product-card">
         <div class="product-image">
-          <img src="/images/placeholder.jpg" :alt="product.name">
+          <img :src="product.image" :alt="product.name">
         </div>
         <div class="product-info">
           <h3>{{ product.name }}</h3>

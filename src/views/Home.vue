@@ -3,16 +3,16 @@ import VintageSlider from '../components/gallery/VintageSlider.vue';
 
 const heroImages = [
   {
-    url: '/images/vintage-1.jpg',
-    caption: 'Classic Artifacts Exhibition 2024'
+    url: new URL('..\assets\REader.jpg', import.meta.url).href,
+    caption: "Fotocamera di Giolitti"
   },
   {
-    url: '/images/vintage-2.jpg',
-    caption: 'Timeless Treasures'
+    url: new URL('..\assets\Datcu.jpg', import.meta.url).href,
+    caption: "Lettore Vinili di Karl Marx"
   },
   {
-    url: '/images/vintage-3.jpg',
-    caption: 'Historical Collection'
+    url: new URL('..\assets\typewriter.jpg', import.meta.url).href,
+    caption: "Macchina da scrivere ricreativa di Bovi"
   }
 ];
 </script>
@@ -22,8 +22,8 @@ const heroImages = [
     <section class="hero">
       <VintageSlider :images="heroImages" />
       <div class="hero-content">
-        <h1>Vintage Exhibition</h1>
-        <p>Step back in time with our curated collection of historical artifacts</p>
+        <h1>Fiera Vintage</h1>
+        <p>Torna indietro nel tempo con la nostra fiera vintage!</p>
       </div>
     </section>
   </main>

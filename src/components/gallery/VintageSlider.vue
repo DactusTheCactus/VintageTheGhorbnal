@@ -11,6 +11,25 @@ const props = defineProps({
     required: true
   }
 });
+
+const images = [
+  {
+    url: new URL('../../assets/Camera.jpg', import.meta.url).href,
+    caption: "Fotocamera di Giolitti"
+  },
+  {
+    url: new URL('../../assets/Reader.jpg', import.meta.url).href,
+    caption: "Lettore Vinili di Karl Marx"
+  },
+  {
+    url: new URL('../../assets/typewriter.jpg', import.meta.url).href,
+    caption: "Macchina da scrivere ricreativa di Bovi"
+  },
+  {
+    url: new URL('../../assets/Mappa.jpg', import.meta.url).href,
+    caption: "Mappa del One Piece"
+  }
+];
 </script>
 
 <template>

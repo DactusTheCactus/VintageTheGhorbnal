@@ -7,10 +7,10 @@ const isMenuOpen = ref(false);
 
 const links = [
   { name: 'Home', path: '/' },
-  { name: 'Products', path: '/products' },
-  { name: 'Creators', path: '/creators' },
-  { name: 'Gallery', path: '/gallery' },
-  { name: 'Contact', path: '/contact' }
+  { name: 'Prodotti', path: '/products' },
+  { name: 'Il Team', path: '/creators' },
+  { name: 'Galleria', path: '/gallery' },
+  { name: 'Contattaci', path: '/contact' }
 ];
 </script>
 
@@ -19,7 +19,7 @@ const links = [
     <div class="nav-border top"></div>
     <div class="nav-content">
       <router-link to="/" class="nav-brand">
-        Vintage Exhibition
+        Fiera del Vintage Pinerolo 
       </router-link>
       
       <button class="menu-toggle" @click="isMenuOpen = !isMenuOpen">

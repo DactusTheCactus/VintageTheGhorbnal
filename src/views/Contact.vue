@@ -1,10 +1,10 @@
 <template>
   <div class="contact-page">
-    <h1>Contact Us</h1>
+    <h1>Contattateci</h1>
     <div class="contact-content">
       <form class="contact-form">
         <div class="form-group">
-          <label for="name">Name</label>
+          <label for="name">Nome</label>
           <input type="text" id="name" required>
         </div>
         <div class="form-group">
@@ -12,17 +12,16 @@
           <input type="email" id="email" required>
         </div>
         <div class="form-group">
-          <label for="message">Message</label>
+          <label for="message">Messaggio</label>
           <textarea id="message" rows="5" required></textarea>
         </div>
-        <button type="submit">Send Message</button>
+        <button type="submit">Manda Messaggio</button>
       </form>
       <div class="contact-info">
-        <h2>Visit Our Exhibition</h2>
-        <p>123 Vintage Street</p>
-        <p>Historic District</p>
-        <p>Opening Hours: 10 AM - 6 PM</p>
-        <p>Tuesday - Sunday</p>
+        <h2>Veniteci a visitare!</h2>
+        <p>Piazza Vittorio Veneto, Pinerolo (TO)</p>
+        <p>20 - 21 - 23 Dicembre</p>
+        <p>Orari: 10:00 - 18:00</p>
       </div>
     </div>
   </div>

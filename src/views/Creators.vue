@@ -2,35 +2,35 @@
 const creators = [
   {
     id: 1,
-    name: 'Elizabeth Montgomery',
-    role: 'Lead Curator',
-    bio: 'With over 20 years of experience in vintage collections',
-    image: '/images/curator-1.jpg'
+    name: 'Alexandru Datcu',
+    role: 'Fondatore - HR',
+    bio: 'Specializzazione in Fossili e Macchine fotografiche',
+    image: new URL('../assets/Datcu.png', import.meta.url).href
   },
   {
     id: 2,
-    name: 'James Harrison',
-    role: 'Restoration Expert',
-    bio: 'Specializing in early 20th century artifacts',
-    image: '/images/curator-2.jpg'
+    name: 'Yasser Ghorbal',
+    role: 'Fondatore - Organizzatore',
+    bio: "Specializzazione nell'abbigliamento vintage ed era presente alla creazione della costituzione",
+    image: new URL('../assets/Ghorbal.png', import.meta.url).href
   },
   {
     id: 3,
-    name: 'Maria Rodriguez',
-    role: 'Historical Researcher',
-    bio: 'PhD in Historical Preservation and Authentication',
-    image: '/images/curator-3.jpg'
+    name: 'Favij',
+    role: 'PR lead',
+    bio: 'Dottorato in realazioni internazionali',
+    image: new URL('../assets/Jellam.jpg', import.meta.url).href
   }
 ];
 </script>
 
 <template>
   <div class="creators-page">
-    <h1>Meet Our Curators</h1>
+    <h1>Incontra il nostro team:</h1>
     <div class="creators-grid">
       <div v-for="creator in creators" :key="creator.id" class="creator-card">
         <div class="creator-image">
-          <img src="/images/placeholder.jpg" :alt="creator.name">
+          <img :src="creator.image" :alt="creator.name">
         </div>
         <div class="creator-info">
           <h3>{{ creator.name }}</h3>
@@ -81,9 +81,10 @@ h1 {
 .creator-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   filter: sepia(20%);
 }
+
 
 .creator-info h3 {
   font-family: var(--font-display);
