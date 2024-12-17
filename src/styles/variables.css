@@ -1,0 +1,28 @@
+:root {
+  /* Vintage Colors */
+  --color-primary: #2C1810;
+  --color-secondary: #D4C5B9;
+  --color-accent: #8B4513;
+  --color-background: #F5E6D3;
+  --color-text: #2C1810;
+  
+  /* Typography */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  
+  /* Borders */
+  --border-ornate: 8px double var(--color-accent);
+  --border-simple: 1px solid var(--color-accent);
+  
+  /* Shadows */
+  --shadow-vintage: 2px 2px 4px rgba(44, 24, 16, 0.2);
+  
+  /* Transitions */
+  --transition-default: all 0.3s ease-in-out;
+}
